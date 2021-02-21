@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { format } from 'date-fns'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NotefulContext from '../NotefulConext'
+import PropTypes from 'prop-types'
 import config from '../config'
 import './Note.css'
 
@@ -36,6 +37,11 @@ class Note extends Component {
       .catch(error => {
         console.error({ error })
       })
+  }
+
+  static propTypes = {
+    id: PropTypes.string,
+    onDeleteNote: PropTypes.func
   }
   
   render() { 
