@@ -17,10 +17,7 @@ class NoteListNav extends Component {
           {folders.map(folder =>
             <li key = {folder.id}>
               <NavLink className = 'NoteListNav__folder-link' to = {`/folder/${folder.id}`}>
-                <span className = 'NoteListNav__num-notes'>
-                  {countNotesForFolder(notes, folder.id)}
-                </span>
-                {folder.name}
+                {folder.folder_name}
               </NavLink>
             </li>
             )}

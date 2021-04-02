@@ -5,7 +5,6 @@ import ValidationError from '../ValidationError/ValidationError'
 import config from '../config'
 import './AddFolder.css'
 
-import './AddFolder.css'
 import ErrorBoundry from '../ErrorBoundry/ErrorBoundry'
 
 class AddFolder extends Component {

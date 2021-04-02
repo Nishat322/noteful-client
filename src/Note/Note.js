@@ -40,7 +40,7 @@ class Note extends Component {
   }
 
   static propTypes = {
-    id: PropTypes.string,
+    id: PropTypes.number,
     onDeleteNote: PropTypes.func
   }
   
